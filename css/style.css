@@ -44,7 +44,7 @@ h1,h2,h3
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 1rem;*/
+    padding: 1rem;
 }
 .spotify{
     margin-left: 1rem;
@@ -88,16 +88,16 @@ img#hero
 /*Isau*/
 .contact
 {
-    background-color: var(--blanco);
-    justify-content: left;
-    padding: 1rem;
+    background-color: var(--secundario); /* Color de fondo */
+    justify-content: left; /* Alineación a la izquierda */
+    padding: 1rem; /* Relleno */
 }
 .contact h2
 {
-    text-align: left;
-    color: var(--oscuro);
-    font-size: 3.7rem;
-    margin-bottom: 2rem;
+    text-align: left; /* Alineación del texto a la izquierda */
+    color: var(--oscuro); /* Color del texto */
+    font-size: 3.7rem; /* Tamaño de la fuente */
+    margin-bottom: 2rem; /* Margen inferior */
 }
 
 
