@@ -14,7 +14,7 @@ html
     box-sizing: border-box;
     background: rgb(2,44,52);
     background: linear-gradient(90deg, rgba(2,44,52,1) 0%, rgba(0,151,167,1) 25%, rgba(6,112,132,1) 75%, rgba(2,44,52,1) 100%);
-
+    
     
     scroll-snap-type: y mandatory;
 }
@@ -85,9 +85,9 @@ h1,h2,h3
 /*Isau*/
 .contact
 {
-    background-color: var(--secundario); /* Color de fondo */
     justify-content: left; /* Alineación a la izquierda */
     padding: 1rem; /* Relleno */
+    font-size: 1.5rem; /* Tamaño de la fuente */
 }
 .contact h2
 {
@@ -95,6 +95,9 @@ h1,h2,h3
     color: var(--oscuro); /* Color del texto */
     font-size: 3.7rem; /* Tamaño de la fuente */
     margin-bottom: 2rem; /* Margen inferior */
+}
+.contact p{
+    color: var(--blanco); /* Color del texto */
 }
 
 
