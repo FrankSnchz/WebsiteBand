@@ -13,7 +13,7 @@ html
     font-size: 62.5%;
     box-sizing: border-box;
     background: rgb(2,44,52);
-    background: linear-gradient(90deg, rgba(2,44,52,1) 0%, rgba(0,151,167,1) 25%, rgba(6,112,132,1) 75%, rgba(2,44,52,1) 100%);
+    background: linear-gradient(90deg, rgba(2,44,52,1) 15%, rgba(0,151,167,1) 40%, rgba(6,112,132,1) 60%, rgba(2,44,52,1) 85%);
     scroll-snap-type: y mandatory;
 }
 
