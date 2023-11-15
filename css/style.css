@@ -67,11 +67,23 @@ h1,h2,h3
     margin-bottom: 2rem;
 }
 
-.hero h3
+.container-hero
 {
-    font-size: 5rem;
-    color: #fff;
     position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-hero h3
+{
+    color: #fff;
+    font-size: 5rem;
 }
 
 .date
