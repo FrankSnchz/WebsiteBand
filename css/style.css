@@ -38,22 +38,22 @@ h1,h2,h3
 
 /*Guille*/  
 .header{
-
+    background-color: var(--oscuro);
 } 
 .iconos{
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 1rem;*/
+    padding: 1rem;
 }
 .spotify{
-    margin-left: 1rem;
+    margin-left: 5rem;
 }
 .youtube{
-    margin-left: 1rem;
+    margin-left: 5rem;
 }
 .AppleMusic{
-    margin-left: 1rem;
+    margin-left: 5rem;
 }
 
 /*ypo*/
