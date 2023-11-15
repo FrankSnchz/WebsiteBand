@@ -35,10 +35,24 @@ h1,h2,h3
     text-align: center;
 }
 
-/*Guille*/
-.header
-{
+/*Guille*/  
+.header{
 
+} 
+.iconos{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;*/
+}
+.spotify{
+    margin-left: 1rem;
+}
+.youtube{
+    margin-left: 1rem;
+}
+.AppleMusic{
+    margin-left: 1rem;
 }
 
 /*ypo*/
