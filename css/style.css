@@ -70,7 +70,7 @@ h1,h2,h3
 
 .date{
     text-align: center;
-    
+
 }
 
 
@@ -82,7 +82,51 @@ h1,h2,h3
 /*Edgar*/
 .information
 {
-    
+    /* Estilos para la sección de información */
+
+    background-color: #f4f4f4; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+
+
+/* Estilos para el formulario de suscripción */
+.form-subscribe {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario en la sección */
+}
+
+fieldset {
+    border: 1px solid #ccc; /* Borde del fieldset */
+    padding: 10px; /* Espaciado interno del fieldset */
+    margin-bottom: 20px; /* Margen inferior del fieldset */
+}
+
+legend {
+    font-weight: bold; /* Texto del título en negrita */
+}
+
+label {
+    display: block; /* Mostrar cada etiqueta en una línea separada */
+    margin-bottom: 5px; /* Margen inferior para separar la etiqueta del campo de entrada */
+}
+
+input[type="email"] {
+    width: 100%; /* Ocupar el ancho completo del contenedor padre */
+    padding: 8px; /* Espaciado interno del campo de entrada */
+    box-sizing: border-box; /* Incluir el relleno y el borde en el ancho total */
+}
+
+.boton {
+    text-align: center; /* Centrar el botón dentro de su contenedor */
+}
+
+.boton_enviar {
+    background-color: #333; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
 }
 
 /*Isau*/
