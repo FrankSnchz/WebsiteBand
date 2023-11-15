@@ -45,7 +45,18 @@ h1,h2,h3
 /*ypo*/
 .hero
 {
-    
+    background-image: url(../image/hero_edit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+img#hero 
+{
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -71,7 +82,7 @@ h1,h2,h3
 {
     text-align: left;
     color: var(--oscuro);
-    font-size: 3.8rem;
+    font-size: 3.7rem;
     margin-bottom: 2rem;
 }
 
