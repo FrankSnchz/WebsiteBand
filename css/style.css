@@ -68,5 +68,6 @@ h1,h2,h3
 /*Uicab*/
 .footer
 {
-
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
 }
