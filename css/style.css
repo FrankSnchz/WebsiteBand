@@ -12,6 +12,8 @@ html
     font-size: 62.5%;
     box-sizing: border-box;
     background-image: linear-gradient(to top, var(--grisClaro) 30%, var(--blanco) 70%); 
+
+    
     scroll-snap-type: y mandatory;
 }
 
@@ -31,4 +33,40 @@ h3
 h1,h2,h3
 {
     text-align: center;
+}
+
+/*Guille*/
+.header
+{
+
+}
+
+/*ypo*/
+.hero
+{
+
+}
+
+
+.contain-shadow
+{
+
+}
+
+/*Edgar*/
+.information
+{
+    
+}
+
+/*Isau*/
+.contact
+{
+
+}
+
+/*Uicab*/
+.footer
+{
+
 }
