@@ -36,24 +36,24 @@ h1,h2,h3
 }
 
 /*Guille*/  
-.header{
-    background-color: var(--oscuro);
-} 
-.iconos{
-    align-items: center;
+
+.nav_bg
+{
+    background-color: var(--terciario);
+}
+
+.nav_principal
+{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
 }
-.spotify{
-    margin-left: 5rem;
-}
-.youtube{
-    margin-left: 5rem;
-}
-.AppleMusic{
-    margin-left: 5rem;
+
+.iconos
+{
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 /*ypo*/
@@ -67,27 +67,19 @@ h1,h2,h3
     margin-bottom: 2rem;
 }
 
-.container-hero
-{
-    position: absolute;
-    background-color: rgba(0, 0, 0, .7);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.ubication
-{
-    
-}
-.container-hero h3
+.hero h3
 {
     font-size: 5rem;
-    color: var(--blanco)
+    color: #fff;
+    position: absolute;
 }
+
+.date
+{
+    text-align: center;
+    
+}
+
 
 .contain-shadow
 {
@@ -164,4 +156,12 @@ h1,h2,h3
     font-size: 16px;
     font-family: 'Krub', sans-serif;
     text-align: center;
+}
+
+@media (min-width: 768px) 
+{
+    .nav_principal
+    {
+        flex-direction: row;
+    }
 }
