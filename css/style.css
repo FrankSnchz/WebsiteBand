@@ -5,15 +5,16 @@
     --terciario: #022C34;
     --oscuro: #212121;
     --gris: #757575;
+    --blanco: #fff;
 }
 
 html
 {
     font-size: 62.5%;
     box-sizing: border-box;
-    background: rgb(2,44,52);
-    background: linear-gradient(90deg, rgba(2,44,52,1) 0%, rgba(0,151,167,1) 25%, rgba(6,112,132,1) 75%, rgba(2,44,52,1) 100%);
+    background-image: linear-gradient(to top, var(--grisClaro) 30%, var(--blanco) 70%); 
 
+    
     scroll-snap-type: y mandatory;
 }
 
@@ -44,12 +45,7 @@ h1,h2,h3
 /*ypo*/
 .hero
 {
-    background-image: url(../image/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    position: relative;
-    margin-bottom: 2rem;
+    
 }
 
 
@@ -61,22 +57,28 @@ h1,h2,h3
 /*Edgar*/
 .information
 {
-    .form-suscribe{
-        
-    }
+    
 }
 
 /*Isau*/
 .contact
 {
-
+    background-color: var(--blanco);
+    justify-content: left;
+    padding: 1rem;
 }
+.contact h2
+{
+    text-align: left;
+    color: var(--oscuro);
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+}
+
 
 /*Uicab*/
 .footer
 {
     font-size: 16px;
-    font-family: 'Comfortaa', sans-serif;
-    font-style: unset;
-    text-align: center;
+    font-family: 'Krub', sans-serif;
 }
