@@ -76,6 +76,7 @@ h1,h2,h3
 .footer
 {
     font-size: 16px;
-    font-family: 'Krub', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: unset;
     text-align: center;
 }
