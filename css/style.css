@@ -5,6 +5,7 @@
     --terciario: #022C34;
     --oscuro: #212121;
     --gris: #757575;
+    --blanco: #fff;
 }
 
 html
@@ -44,7 +45,7 @@ h1,h2,h3
 /*ypo*/
 .hero
 {
-
+    
 }
 
 
@@ -62,7 +63,16 @@ h1,h2,h3
 /*Isau*/
 .contact
 {
-
+    background-color: var(--blanco);
+    justify-content: left;
+    padding: 1rem;
+}
+.contact h2
+{
+    text-align: left;
+    color: var(--oscuro);
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
 }
 
 /*Uicab*/
