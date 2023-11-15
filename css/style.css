@@ -95,10 +95,52 @@ h1,h2,h3
 }
 
 /*Edgar*/
-.information
-{
-    
+.form-subscribe {
+    text-align: center;
 }
+.form-subscribe{
+    background-color: var(--terciario);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5rem;
+}
+
+  .form-subscribe fieldset {
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+  
+ .form-subscribe legend {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: yellow; /*Color solo puesto para ver cambios*/
+    text-transform: uppercase;
+  }
+.entrada{
+    margin-bottom: 1rem;
+}
+.entrada label {
+    color: var(--blanco);
+    font-weight: bold;
+    display: block;
+    color: pink;
+  }
+
+  .entrada input{
+    background-color: var(--blanco);
+    text-transform: uppercase;
+  }
+
+  .boton_enviar{
+    background-color:red;  /*Color solo puesto para notar cambios*/
+    margin-top: 1rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+
 
 /*Isau*/
 .contact
