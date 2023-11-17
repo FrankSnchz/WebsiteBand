@@ -8,6 +8,16 @@
     --oscuro: #212121;
     --gris: #757575;
     --blanco: #fff;
+
+    --AzulProfundo: #001F3F;
+    --AzulEspacial: #071E3D;
+    --AzulNocturno: #004080;
+    --AzulNocturno2:#00509E;
+    --AzulNebulosa: #214559;
+    --AzulNebulosa2: #3A536A;
+    --AzulCeleste: #33A1DE;
+    --AzulCeleste2: #0080FF;
+    --AzulCeleste3: #5DC8FF;
 }
 
 html
@@ -19,19 +29,6 @@ html
     scroll-snap-type: y mandatory;
 }
 
-/*TIPOGRAFIA*/
-h1
-{
-    font-size: 3.8rem;
-}
-h2
-{
-    font-size: 2.8rem;
-}
-h3
-{
-    font-size: 1.8rem;
-}
 h1,h2,h3
 {
     text-align: center;
@@ -42,13 +39,15 @@ h1,h2,h3
 .nav_bg
 {
     background-color: var(--terciario);
+    margin: 1rem;
+    border-radius: 2%;
 }
 
 .nav_principal
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -61,22 +60,19 @@ h1,h2,h3
 .redes
 {
     display: inline-block;
-    padding: 0 1rem;
+    padding: 1rem;
     font-size: 16px; /* Tamaño de la fuente del icono */
     text-align: center;
-    text-decoration: none;
     cursor: pointer;
     border-radius: 5rem;
-    background-size: contain; /* Ajusta el tamaño del icono */
 }
 .redes:hover
 {
-    padding: 1.5rem;
+    margin: 1rem;
     border: 1px solid var(--quinto);
+    background-color: var(--primario);
 }
 
-
-/*ypo*/
 .hero
 {
     background-image: url(../img/hero.jpg);
@@ -84,6 +80,7 @@ h1,h2,h3
     background-size: cover;
     height: 45rem;
     position: relative;
+    border-radius: 2%;
 }
 
 .container-hero
@@ -95,35 +92,58 @@ h1,h2,h3
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-end
+    justify-content:end;
+    border-radius: 2%;
 }
 
-.container-hero h3
-{
-    color: var(--quinto);
-    font-size: 5rem;
-    cursor: pointer;
-    border-radius: 1rem;
-}
-
-.container-hero h3:hover
+.container-hero a
 {
     color: var(--primario);
     font-size: 5rem;
-    border: 1px solid var(--quinto);
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+    text-decoration: none;
+    padding-bottom: 2rem;
 }
 
-.date
+.container-hero a:hover
 {
-    text-align: center;
-    
+    color: var(--terciario);
+    font-size: 5rem;
+    margin: 1rem;
 }
-
 
 .contain-shadow
 {
-
+    border-radius: 2%;
+    background-color: var(--terciario);
+    margin: 1rem;
+    padding: 1.5rem;
 }
+.contain-shadow h2
+{
+    margin: 0;
+    font-size: 5rem;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--primario);
+}
+.dates
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.date
+{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
 
 /*Ragdios*/
 .form-subscribe {
@@ -206,4 +226,5 @@ h1,h2,h3
     {
         flex-direction: row;
     }
+    
 }
