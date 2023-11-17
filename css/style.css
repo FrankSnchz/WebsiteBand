@@ -1,14 +1,5 @@
 :root
 {
-    --primario: #067084;
-    --secundario: #0097a7;
-    --terciario: #022C34;
-    --cuaternario: #0e1f36;
-    --quinto: #343b4a;
-    --oscuro: #212121;
-    --gris: #757575;
-    --blanco: #fff;
-
     --AzulProfundo: #001F3F;
     --AzulEspacial: #071E3D;
     --AzulNocturno: #004080;
@@ -16,8 +7,9 @@
     --AzulNebulosa: #214559;
     --AzulNebulosa2: #3A536A;
     --AzulCeleste: #33A1DE;
-    --AzulCeleste2: #0080FF;
-    --AzulCeleste3: #5DC8FF;
+    --AzulCeleste2: #5DC8FF;
+    --AzulCeleste3: #0080FF;
+
 }
 
 html
@@ -38,8 +30,7 @@ h1,h2,h3
 
 .nav_bg
 {
-    background-color: var(--terciario);
-    margin: 1rem;
+    background-color: var(--AzulNebulosa);
     border-radius: 2%;
 }
 
@@ -69,8 +60,8 @@ h1,h2,h3
 .redes:hover
 {
     margin: 1rem;
-    border: 1px solid var(--quinto);
-    background-color: var(--primario);
+    border: 1px solid var(--AzulNocturno2 );
+    background-color: var(--AzulNocturno);
 }
 
 .hero
@@ -86,7 +77,7 @@ h1,h2,h3
 .container-hero
 {
     position: absolute;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
     display: flex;
@@ -98,7 +89,7 @@ h1,h2,h3
 
 .container-hero a
 {
-    color: var(--primario);
+    color: var(--AzulNocturno);
     font-size: 5rem;
     font-family: 'Roboto Slab', serif;
     font-family: 'Titillium Web', sans-serif;
@@ -107,6 +98,8 @@ h1,h2,h3
     border-radius: 1rem;
     text-decoration: none;
     padding-bottom: 2rem;
+    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+
 }
 
 .container-hero a:hover
@@ -118,40 +111,67 @@ h1,h2,h3
 
 .contain-shadow
 {
-    border-radius: 2%;
-    background-color: var(--terciario);
     margin: 1rem;
+    border-radius: 2%;
+    background-color: var(--AzulNebulosa);
     padding: 1.5rem;
 }
-.contain-shadow h2
+.contain-shadow h3
 {
     margin: 0;
-    font-size: 5rem;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Titillium Web', sans-serif;
+    font-size: 4rem;
     color: var(--primario);
+    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    font-family: 'Krub', sans-serif;
+    margin: 2rem;
+
 }
-.dates
-{
-    display: flex;
-    justify-content: space-evenly;
-}
+
 .date
 {
-    font-size: 2rem;
-    text-align: center;
+    border: .1rem solid var(--AzulEspacial); /* Puedes cambiar el color y el grosor según tus preferencias */
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab', serif;
+    background-color: var(--AzulNebulosa2);
 }
 
+.date h2,
+.date p, 
+.date a
+{
+    display: inline-block;
+    margin-left: 4rem;
+    margin-right: 7rem;
 
-
-
-/*Ragdios*/
-.form-subscribe {
-    text-align: center;
 }
-.form-subscribe{
-    background-color: var(--terciario);
-    width: min(60rem, 100%);
+
+.find-tickets 
+{
+    display: inline-block;
+    padding: 1rem 2rem; /* Ajusta el relleno según tus preferencias */
+    text-decoration: none;
+    background-color: var(--AzulNebulosa2); /* Cambia el color de fondo según tus preferencias */
+    color: var(--AzulCeleste2); /* Cambia el color del texto según tus preferencias */
+    border: .3rem solid var(--AzulCeleste2); /* Puedes cambiar el color y el grosor según tus preferencias */
+    border-radius: 3rem; /* Ajusta el radio de la esquina para lograr la forma redondeada */
+}
+
+.find-tickets:hover 
+{
+    background-color: var(--AzulNebulosa); /* Cambia el color de fondo al pasar el mouse */
+}
+
+.information
+{
+    padding: 1rem;
+    background-color: var(--AzulNebulosa);
+
+}
+.form-subscribe
+{
+    text-align: center;
+    background-color: var(--AzulNebulosa);
+    width: min(50rem, 100%);
     margin: 0 auto;
     padding: 1rem;
     border-radius: 5rem;
@@ -160,8 +180,6 @@ h1,h2,h3
   .form-subscribe fieldset {
     border: none;
     font-size: 2rem;
-    font-weight: bold;
-    font-style: italic;
 }
   
  .form-subscribe legend {
@@ -173,41 +191,59 @@ h1,h2,h3
 .entrada{
     margin-bottom: 1rem;
 }
-.entrada label {
+.entrada label 
+{
     color: var(--blanco);
     font-weight: bold;
     display: block;
     color: pink;
-  }
+}
 
-  .entrada input{
-    background-color: var(--blanco);
-    text-transform: uppercase;
-  }
+.entrada input
+{
+    background-color: var(--AzulEspacial);
+    font-style: italic;
+}
 
-  .boton_enviar{
+::placeholder
+{
+    color: var(--AzulCeleste3);
+}
+
+.boton_enviar
+{
     background-color:red;  /*Color solo puesto para notar cambios*/
     margin-top: 1rem;
     font-style: italic;
     font-weight: bold;
-  }
+}
 
-
-/*Isau*/
-.contact
+.boton_enviar:hover
 {
+    cursor: pointer;
+
+}
+
+.contact
+{   
+    padding: 1rem;
+    border-top: .1rem solid var(--AzulEspacial); /* Puedes cambiar el color y el grosor según tus preferencias */
     justify-content: left; /* Alineación a la izquierda */
-    padding: 1rem; /* Relleno */
     font-size: 1.5rem; /* Tamaño de la fuente */
+    background-color: var(--AzulNebulosa);
 }
 .contact h2
 {
+    margin: 0;
     text-align: left; /* Alineación del texto a la izquierda */
     color: var(--oscuro); /* Color del texto */
     font-size: 3.7rem; /* Tamaño de la fuente */
     margin-bottom: 2rem; /* Margen inferior */
 }
-.contact p{
+.contact p
+{
+    padding: 1rem;
+    margin: 0;
     color: var(--blanco); /* Color del texto */
 }
 
@@ -215,9 +251,17 @@ h1,h2,h3
 /*Uicab*/
 .footer
 {
-    font-size: 16px;
+    margin: 1rem;
+    background-color: var(--AzulNebulosa);
+    font-size: 2rem;
     font-family: 'Krub', sans-serif;
     text-align: center;
+}
+.footer p
+{
+    padding: 1rem;
+    border-top: .1rem solid var(--AzulEspacial); /* Puedes cambiar el color y el grosor según tus preferencias */
+    margin: 0;
 }
 
 @media (min-width: 768px) 
