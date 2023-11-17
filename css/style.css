@@ -3,6 +3,8 @@
     --primario: #067084;
     --secundario: #0097a7;
     --terciario: #022C34;
+    --cuaternario: #0e1f36;
+    --quinto: #343b4a;
     --oscuro: #212121;
     --gris: #757575;
     --blanco: #fff;
@@ -56,34 +58,59 @@ h1,h2,h3
     margin: 0 auto;
 }
 
+.redes
+{
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 16px; /* Tamaño de la fuente del icono */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5rem;
+    background-size: contain; /* Ajusta el tamaño del icono */
+}
+.redes:hover
+{
+    padding: 1.5rem;
+    border: 1px solid var(--quinto);
+}
+
+
 /*ypo*/
 .hero
 {
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 45rem;
     position: relative;
-    margin-bottom: 2rem;
 }
 
 .container-hero
 {
     position: absolute;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .6);
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-end
 }
 
 .container-hero h3
 {
-    color: #fff;
+    color: var(--quinto);
     font-size: 5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.container-hero h3:hover
+{
+    color: var(--primario);
+    font-size: 5rem;
+    border: 1px solid var(--quinto);
 }
 
 .date
