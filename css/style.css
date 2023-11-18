@@ -31,7 +31,7 @@ h1,h2,h3
 .nav_bg
 {
     background-color: var(--AzulNebulosa);
-    border-radius: 2%;
+    border-radius: 10%;
 }
 
 .nav_principal
@@ -115,6 +115,7 @@ h1,h2,h3
     border-radius: 2%;
     background-color: var(--AzulNebulosa);
     padding: 1.5rem;
+    
 }
 .contain-shadow h3
 {
@@ -185,7 +186,7 @@ h1,h2,h3
  .form-subscribe legend {
     font-size: 1.8rem;
     margin-bottom: 2rem;
-    color: yellow; /*Color solo puesto para ver cambios*/
+    color: white; /*Color solo puesto para ver cambios*/
     text-transform: uppercase;
   }
 .entrada{
@@ -212,16 +213,24 @@ h1,h2,h3
 
 .boton_enviar
 {
-    background-color:red;  /*Color solo puesto para notar cambios*/
-    margin-top: 1rem;
-    font-style: italic;
-    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid var(--AzulNocturno);
+    border-radius: 5px;
+    color: var(--AzulEspacial);
+    background-color:var(--AzulNocturno);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .boton_enviar:hover
 {
-    cursor: pointer;
-
+    background-color: #3498db;
+    color: #fff;
+    border-color: #fff;
 }
 
 .contact
