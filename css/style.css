@@ -9,6 +9,12 @@
     --AzulCeleste: #33A1DE;
     --AzulCeleste2: #5DC8FF;
     --AzulCeleste3: #0080FF;
+    /*Azules Intensos*/
+    --AzulIntenso1:#0c03fd;
+    --AzulIntenso2:#0902e2;
+    --AzulIntenso3: #0602c6;
+    --AzulIntenso4:#0301ab;
+    --AzulIntenso5:#000090;
 }
 
 html
@@ -27,7 +33,7 @@ body
 /* ------------------------NAVEGACION PRINCIPAL---------------------*/
 .nav_bg
 {
-    background-color: var(--AzulNocturno);
+    background-color: var(--AzulIntenso5);
 }
 
 .nav_principal
@@ -67,19 +73,17 @@ body
     background-image: url(../img/PaulBanner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
     height: 45rem;
     position: relative;
-}
-
-.container-hero
-{
-    position: absolute;
-    background-color: rgba(0, 0, 0, .3);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    background-color: var(--AzulIntenso5);
+    padding: 1.5rem;
+    max-width: 150rem;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 .container-hero a
@@ -94,7 +98,7 @@ body
 
 .container-hero a:hover
 {
-    color: var(--AzulEspacial);
+    color: var(--AzulIntenso5);
     text-decoration: none;
 
 }
@@ -106,8 +110,11 @@ body
     font-family: 'Quicksand', sans-serif;    
     margin: 1rem 0;
     border-radius: 2rem;
-    background-color: var(--AzulNocturno);
+    background-color: var(--AzulIntenso5);
     padding: 1.5rem;
+    max-width: 150rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .contain-shadow h3 
@@ -170,7 +177,7 @@ body
 
 #myCarousel 
 {
-    background-color: var(--AzulNocturno);
+    background-color: var(--AzulIntenso5);
 }
 
 
@@ -179,8 +186,12 @@ body
 {
     font-family: 'Quicksand', sans-serif;    
     margin: 1rem 0;
-    background-color: var(--AzulNocturno);
     border-radius: 2rem;
+    background-color: var(--AzulIntenso5);
+    padding: 1.5rem;
+    max-width: 150rem;
+    margin-right: auto;
+    margin-left: auto;;
 
 }
 .form-subscribe
@@ -190,6 +201,7 @@ body
     margin: 0 auto;
     padding: 3rem;
     border-radius: 5rem;
+    
 }
 
 .form-subscribe fieldset 
@@ -212,7 +224,7 @@ body
 
 .entrada input
 {
-    background-color: var(--AzulProfundo);
+    background-color: var(--AzulIntenso5);
     color: aliceblue;
     border-radius: 1rem;
 }
@@ -249,7 +261,7 @@ body
 {
     color: aliceblue;
     font-family: 'Quicksand', sans-serif;    
-    background-color: var(--AzulNocturno);
+    background-color: var(--AzulIntenso5);
 }
 
 /* ---------------CONTACTO-----------------*/
@@ -258,7 +270,7 @@ body
     padding: 2rem;
     justify-content: left; /* Alineación a la izquierda */
     font-size: 1.5rem; /* Tamaño de la fuente */
-    background-color: var(--AzulNocturno);
+    background-color: var(--AzulIntenso5);
 }
 
 .contact h2
