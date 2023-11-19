@@ -9,35 +9,31 @@
     --AzulCeleste: #33A1DE;
     --AzulCeleste2: #5DC8FF;
     --AzulCeleste3: #0080FF;
-
 }
 
 html
 {
     font-size: 62.5%;
     box-sizing: border-box;
-    background: rgb(2,44,52);
-    background: linear-gradient(90deg, rgba(2,44,52,1) 15%, rgba(0,151,167,1) 40%, rgba(6,112,132,1) 60%, rgba(2,44,52,1) 85%);
     scroll-snap-type: y mandatory;
 }
 
-h1,h2,h3
+body
 {
-    text-align: center;
+    background-color: aliceblue;
 }
 
-/*Memo Toño*/  
 
+/* ------------------------NAVEGACION PRINCIPAL---------------------*/
 .nav_bg
 {
-    background-color: var(--AzulNebulosa);
-    border-radius: 2%;
+    background-color: var(--AzulNocturno);
 }
 
 .nav_principal
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -52,7 +48,6 @@ h1,h2,h3
 {
     display: inline-block;
     padding: 1rem;
-    font-size: 16px; /* Tamaño de la fuente del icono */
     text-align: center;
     cursor: pointer;
     border-radius: 5rem;
@@ -60,89 +55,78 @@ h1,h2,h3
 .redes:hover
 {
     margin: 1rem;
-    border: 1px solid var(--AzulNocturno2 );
-    background-color: var(--AzulNocturno);
+    border: 1px solid var(--AzulNebulosa );
+    background-color: var(--AzulNocturno2);
 }
 
+
+/* ------------------------BANNER---------------------------*/
 .hero
 {
-    background-image: url(../img/hero.jpg);
+    font-family: 'Quicksand', sans-serif;    
+    background-image: url(../img/PaulBanner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 45rem;
     position: relative;
-    border-radius: 2%;
 }
 
 .container-hero
 {
     position: absolute;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .3);
     width: 100%;
     height: 100%;
     display: flex;
+    text-align: center;
     flex-direction: column;
-    align-items: center;
-    justify-content:end;
-    border-radius: 2%;
 }
 
 .container-hero a
 {
-    color: var(--AzulNocturno);
+    padding-top: 2rem;
+    color: aliceblue;
     font-size: 5rem;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: bold;
     cursor: pointer;
     border-radius: 1rem;
     text-decoration: none;
-    padding-bottom: 2rem;
-    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
-
 }
 
 .container-hero a:hover
 {
-    color: var(--terciario);
-    font-size: 5rem;
-    margin: 1rem;
+    color: var(--AzulEspacial);
+    text-decoration: none;
+
 }
 
+
+/* ----------------FECHAS DEL CONCIERTO------------------*/
 .contain-shadow
 {
-    margin: 1rem;
-    border-radius: 2%;
-    background-color: var(--AzulNebulosa);
+    font-family: 'Quicksand', sans-serif;    
+    margin: 1rem 0;
+    border-radius: 2rem;
+    background-color: var(--AzulNocturno);
     padding: 1.5rem;
 }
-.contain-shadow h3
+
+.contain-shadow h3 
 {
-    margin: 0;
+    text-align: center;    
     font-size: 4rem;
-    color: var(--primario);
-    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
-    font-family: 'Krub', sans-serif;
-    margin: 2rem;
-
+    color: aliceblue;
 }
 
-.date
+.table td
 {
-    border: .1rem solid var(--AzulEspacial); /* Puedes cambiar el color y el grosor según tus preferencias */
-    font-size: 2.5rem;
-    font-family: 'Roboto Slab', serif;
-    background-color: var(--AzulNebulosa2);
+    font-size: 2rem;
+    color: aliceblue;
 }
 
-.date h2,
-.date p, 
-.date a
+.table th
 {
-    display: inline-block;
-    margin-left: 4rem;
-    margin-right: 7rem;
-
+    font-size: 2rem;
+    color: var(--AzulCeleste2);
 }
 
 .find-tickets 
@@ -150,125 +134,183 @@ h1,h2,h3
     display: inline-block;
     padding: 1rem 2rem; /* Ajusta el relleno según tus preferencias */
     text-decoration: none;
-    background-color: var(--AzulNebulosa2); /* Cambia el color de fondo según tus preferencias */
-    color: var(--AzulCeleste2); /* Cambia el color del texto según tus preferencias */
+    background-color: var(--AzulNocturno2); /* Cambia el color de fondo según tus preferencias */
+    color:aliceblue; /* Cambia el color del texto según tus preferencias */
     border: .3rem solid var(--AzulCeleste2); /* Puedes cambiar el color y el grosor según tus preferencias */
     border-radius: 3rem; /* Ajusta el radio de la esquina para lograr la forma redondeada */
 }
 
 .find-tickets:hover 
 {
-    background-color: var(--AzulNebulosa); /* Cambia el color de fondo al pasar el mouse */
+    text-decoration: none;
+    color:aliceblue; /* Cambia el color del texto según tus preferencias */
+    background-color: var(--AzulNocturno); /* Cambia el color de fondo al pasar el mouse */
+    border: .3rem solid var(--AzulProfundo); /* Puedes cambiar el color y el grosor según tus preferencias */
 }
 
+
+/* -------------------CARRUSEL DE FOTOS-------------------------- */
+.carousel-inner
+{
+    text-align: center;
+}
+
+.carousel-inner .item 
+{
+    display: inline-block;
+    text-align: left;
+}
+
+.carousel-inner img 
+{
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
+    height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+#myCarousel 
+{
+    background-color: var(--AzulNocturno);
+}
+
+
+/* -------------------SUSCRIPCIÓN---------------------*/
 .information
 {
-    padding: 1rem;
-    background-color: var(--AzulNebulosa);
+    font-family: 'Quicksand', sans-serif;    
+    margin: 1rem 0;
+    background-color: var(--AzulNocturno);
+    border-radius: 2rem;
 
 }
 .form-subscribe
 {
     text-align: center;
-    background-color: var(--AzulNebulosa);
     width: min(50rem, 100%);
     margin: 0 auto;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 5rem;
 }
 
-  .form-subscribe fieldset {
+.form-subscribe fieldset 
+{
     border: none;
     font-size: 2rem;
 }
   
- .form-subscribe legend {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: yellow; /*Color solo puesto para ver cambios*/
-    text-transform: uppercase;
-  }
-.entrada{
-    margin-bottom: 1rem;
+.form-subscribe legend 
+{
+    font-size: 3rem;
+    color: aliceblue; /*Color solo puesto para ver cambios*/
 }
+
 .entrada label 
 {
-    color: var(--blanco);
-    font-weight: bold;
     display: block;
-    color: pink;
+    color: var(--AzulCeleste2);
 }
 
 .entrada input
 {
-    background-color: var(--AzulEspacial);
-    font-style: italic;
+    background-color: var(--AzulProfundo);
+    color: aliceblue;
+    border-radius: 1rem;
 }
 
 ::placeholder
 {
-    color: var(--AzulCeleste3);
+    color: var(--AzulNebulosa2);
+    font-style: italic;
 }
 
 .boton_enviar
 {
-    background-color:red;  /*Color solo puesto para notar cambios*/
-    margin-top: 1rem;
-    font-style: italic;
-    font-weight: bold;
+    margin: 2rem;
+    display: inline-block;
+    padding: .1rem 3rem; 
+    text-decoration: none;
+    background-color: var(--AzulNocturno2); 
+    color:aliceblue; 
+    border: .3rem solid var(--AzulCeleste2); 
+    border-radius: 3rem; 
 }
 
 .boton_enviar:hover
 {
-    cursor: pointer;
+    text-decoration: none;
+    color:aliceblue; /* Cambia el color del texto según tus preferencias */
+    background-color: var(--AzulNocturno); /* Cambia el color de fondo al pasar el mouse */
+    border: .3rem solid var(--AzulProfundo); /* Puedes cambiar el color y el grosor según tus preferencias */
 
 }
 
+/* ------------------------------PIE DE PÁGINA-----------------------------*/
+.footer
+{
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;    
+    background-color: var(--AzulNocturno);
+}
+
+/* ---------------CONTACTO-----------------*/
 .contact
 {   
-    padding: 1rem;
-    border-top: .1rem solid var(--AzulEspacial); /* Puedes cambiar el color y el grosor según tus preferencias */
+    padding: 2rem;
     justify-content: left; /* Alineación a la izquierda */
     font-size: 1.5rem; /* Tamaño de la fuente */
-    background-color: var(--AzulNebulosa);
+    background-color: var(--AzulNocturno);
 }
+
 .contact h2
 {
     margin: 0;
-    text-align: left; /* Alineación del texto a la izquierda */
-    color: var(--oscuro); /* Color del texto */
-    font-size: 3.7rem; /* Tamaño de la fuente */
+    text-align: center; /* Alineación del texto a la izquierda */
+    font-size: 3rem; /* Tamaño de la fuente */
     margin-bottom: 2rem; /* Margen inferior */
 }
 .contact p
 {
-    padding: 1rem;
     margin: 0;
-    color: var(--blanco); /* Color del texto */
+    font-style: italic;
+    text-align: center;   
 }
 
 
-/*Uicab*/
-.footer
+/* ---------------COPYRIGHT-----------------*/
+
+.copyright
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    color: aliceblue;
+}
+
+.copyright p
 {
     margin: 1rem;
-    background-color: var(--AzulNebulosa);
-    font-size: 2rem;
-    font-family: 'Krub', sans-serif;
-    text-align: center;
-}
-.footer p
-{
-    padding: 1rem;
-    border-top: .1rem solid var(--AzulEspacial); /* Puedes cambiar el color y el grosor según tus preferencias */
-    margin: 0;
+    font-size: 1.5rem;
 }
 
 @media (min-width: 768px) 
 {
+
+    .contact h2,
+    .contact p
+    {
+        text-align: left;
+    }
+
+    .hero
+    {
+        background-image: url(../img/hero.jpg);
+    }   
+
     .nav_principal
     {
-        flex-direction: row;
+        justify-content: space-around;
     }
-    
+
 }
