@@ -9,29 +9,25 @@
     --AzulCeleste: #33A1DE;
     --AzulCeleste2: #5DC8FF;
     --AzulCeleste3: #0080FF;
-
 }
 
 html
 {
     font-size: 62.5%;
     box-sizing: border-box;
-    background: rgb(2,44,52);
-    background: linear-gradient(90deg, rgba(2,44,52,1) 15%, rgba(0,151,167,1) 40%, rgba(6,112,132,1) 60%, rgba(2,44,52,1) 85%);
     scroll-snap-type: y mandatory;
 }
 
 body
 {
-    text-align: center;
+    background-color: aliceblue;
 }
 
 
 /* ------------------------NAVEGACION PRINCIPAL---------------------*/
 .nav_bg
 {
-    background-color: var(--AzulNebulosa);
-    border-radius: 2%;
+    background-color: var(--AzulNocturno);
 }
 
 .nav_principal
@@ -112,7 +108,6 @@ body
     border-radius: 2rem;
     background-color: var(--AzulNocturno);
     padding: 1.5rem;
-    
 }
 
 .contain-shadow h3 
@@ -203,15 +198,12 @@ body
     font-size: 2rem;
 }
   
- .form-subscribe legend {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: yellow; /*Color solo puesto para ver cambios*/
-    text-transform: uppercase;
-  }
-.entrada{
-    margin-bottom: 1rem;
+.form-subscribe legend 
+{
+    font-size: 3rem;
+    color: aliceblue; /*Color solo puesto para ver cambios*/
 }
+
 .entrada label 
 {
     display: block;
@@ -233,18 +225,34 @@ body
 
 .boton_enviar
 {
-    background-color:red;  /*Color solo puesto para notar cambios*/
-    margin-top: 1rem;
-    font-style: italic;
-    font-weight: bold;
+    margin: 2rem;
+    display: inline-block;
+    padding: .1rem 3rem; 
+    text-decoration: none;
+    background-color: var(--AzulNocturno2); 
+    color:aliceblue; 
+    border: .3rem solid var(--AzulCeleste2); 
+    border-radius: 3rem; 
 }
 
 .boton_enviar:hover
 {
-    cursor: pointer;
+    text-decoration: none;
+    color:aliceblue; /* Cambia el color del texto según tus preferencias */
+    background-color: var(--AzulNocturno); /* Cambia el color de fondo al pasar el mouse */
+    border: .3rem solid var(--AzulProfundo); /* Puedes cambiar el color y el grosor según tus preferencias */
 
 }
 
+/* ------------------------------PIE DE PÁGINA-----------------------------*/
+.footer
+{
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;    
+    background-color: var(--AzulNocturno);
+}
+
+/* ---------------CONTACTO-----------------*/
 .contact
 {   
     padding: 2rem;
