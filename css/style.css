@@ -113,7 +113,7 @@ body
         padding: 1.5rem;
         max-width: 150rem;
         margin-right: auto;
-        margin-left: auto;;
+        margin-left: auto;
     
     }
 }
@@ -148,6 +148,7 @@ body
     justify-content: center;
     align-items: center;
 }
+
 
 /* ----------------FECHAS DEL CONCIERTO------------------*/
 .contain-shadow
