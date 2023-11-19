@@ -33,7 +33,7 @@ body
 /* ------------------------NAVEGACION PRINCIPAL---------------------*/
 .nav_bg
 {
-    background-color: var(--AzulIntenso5);
+    background-color: var(--AzulNocturno);
 }
 
 .nav_principal
@@ -60,9 +60,7 @@ body
 }
 .redes:hover
 {
-    margin: 1rem;
-    border: 1px solid var(--AzulNebulosa );
-    background-color: var(--AzulNocturno2);
+    background-color: var(--AzulProfundo);
 }
 
 
@@ -154,6 +152,7 @@ body
     background-color: var(--AzulNocturno); /* Cambia el color de fondo al pasar el mouse */
     border: .3rem solid var(--AzulProfundo); /* Puedes cambiar el color y el grosor según tus preferencias */
 }
+
 
 
 /* -------------------CARRUSEL DE FOTOS-------------------------- */
@@ -268,7 +267,6 @@ body
 .contact
 {   
     padding: 2rem;
-    justify-content: left; /* Alineación a la izquierda */
     font-size: 1.5rem; /* Tamaño de la fuente */
     background-color: var(--AzulIntenso5);
 }
@@ -276,9 +274,10 @@ body
 .contact h2
 {
     margin: 0;
-    text-align: center; /* Alineación del texto a la izquierda */
     font-size: 3rem; /* Tamaño de la fuente */
     margin-bottom: 2rem; /* Margen inferior */
+    text-align: center;
+    
 }
 .contact p
 {
@@ -312,7 +311,7 @@ body
     .contact h2,
     .contact p
     {
-        text-align: left;
+        text-align: center;
     }
 
     .hero
@@ -325,4 +324,6 @@ body
         justify-content: space-around;
     }
 
+
 }
+
