@@ -22,11 +22,13 @@ html
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
+    
 }
 
 body
 {
     background-color: aliceblue;
+    
 }
 
 
@@ -34,6 +36,8 @@ body
 .nav_bg
 {
     background-color: var(--AzulIntenso5);
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
 }
 
 .nav_principal
@@ -114,7 +118,6 @@ body
         max-width: 150rem;
         margin-right: auto;
         margin-left: auto;
-    
     }
 }
 .sombra{
@@ -213,6 +216,7 @@ body
 {
     display: inline-block;
     text-align: left;
+    
 }
 
 .carousel-inner img 
@@ -225,6 +229,11 @@ body
 #myCarousel 
 {
     background-color: var(--AzulIntenso5);
+    padding: 1.5rem;
+    max-width: 150rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 2rem;
 }
 
 
@@ -306,32 +315,26 @@ body
 /* ------------------------------PIE DE PÁGINA-----------------------------*/
 .footer
 {
+    
     color: aliceblue;
     font-family: 'Quicksand', sans-serif;    
     background-color: var(--AzulIntenso5);
+    max-width: 150rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    
 }
 
 /* ---------------CONTACTO-----------------*/
-.contact
-{   
-    padding: 2rem;
-    font-size: 1.5rem; /* Tamaño de la fuente */
-    background-color: var(--AzulIntenso5);
-}
 
 .contact h2
 {
-    margin: 0;
+    padding: 2rem;
     font-size: 3rem; /* Tamaño de la fuente */
-    margin-bottom: 2rem; /* Margen inferior */
     text-align: center;
-    
-}
-.contact p
-{
-    margin: 0;
-    font-style: italic;
-    text-align: center;   
 }
 
 
@@ -356,7 +359,6 @@ body
 @media (min-width: 768px) 
 {
 
-    .contact h2,
     .contact p
     {
         text-align: center;
