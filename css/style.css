@@ -35,7 +35,7 @@ body
 /* ------------------------NAVEGACION PRINCIPAL---------------------*/
 .nav_bg
 {
-    background-color: var(--AzulIntenso1);
+    background-color: var(--AzulCeleste3);
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
@@ -64,7 +64,7 @@ body
 }
 .redes:hover
 {
-    background-color: var(--AzulProfundo);
+    background-color: var(--AzulCeleste2);
 }
 
 
@@ -129,9 +129,9 @@ body
 .contenido{
     display: flex;
     flex-direction: column;
-   padding: 2rem;
-   margin: 0 auto;
-   align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    align-items: center;
   
 }
 .contenido h3{
@@ -145,7 +145,7 @@ body
 .contenido .QS{
     height: 15rem;
     width: 15rem;
-    background-color: var(--AzulIntenso1);
+    background-color: var(--AzulCeleste3);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -159,7 +159,7 @@ body
     font-family: 'Quicksand', sans-serif;    
     margin: 1rem 0;
     border-radius: 2rem;
-    background-color: var(--AzulIntenso1);
+    background-color: var(--AzulCeleste3);
     padding: 1.5rem;
     max-width: 150rem;
     margin-right: auto;
@@ -182,7 +182,7 @@ body
 .table th
 {
     font-size: 2rem;
-    color: var(--AzulCeleste2);
+    color: var(--AzulIntenso4);
 }
 
 .find-tickets 
@@ -228,7 +228,7 @@ body
 
 #myCarousel 
 {
-    background-color: var(--AzulIntenso5);
+    background-color: var(--AzulCeleste3);
     padding: 1.5rem;
     max-width: 150rem;
     margin-right: auto;
@@ -243,7 +243,7 @@ body
     font-family: 'Quicksand', sans-serif;    
     margin: 1rem 0;
     border-radius: 2rem;
-    background-color: var(--AzulIntenso1);
+    background-color: var(--AzulCeleste3);
     padding: 1.5rem;
     max-width: 150rem;
     margin-right: auto;
@@ -275,19 +275,19 @@ body
 .entrada label 
 {
     display: block;
-    color: var(--AzulCeleste2);
+    color: aliceblue;
 }
 
 .entrada input
 {
-    background-color: var(--AzulIntenso1);
+    background-color: var(--AzulNocturno);
     color: aliceblue;
     border-radius: 1rem;
 }
 
 ::placeholder
 {
-    color: var(--AzulNebulosa2);
+    color: aliceblue;
     font-style: italic;
 }
 
@@ -318,7 +318,7 @@ body
     
     color: aliceblue;
     font-family: 'Quicksand', sans-serif;    
-    background-color: var(--AzulIntenso1);
+    background-color: var(--AzulCeleste3);
 }
 
 /* ---------------CONTACTO-----------------*/
@@ -326,7 +326,7 @@ body
 {   
     padding: 2rem;
     font-size: 1.5rem; /* Tamaño de la fuente */
-    background-color: var(--AzulIntenso1);
+    background-color: var(--AzulCeleste3);
 }
 
 .contact h2
